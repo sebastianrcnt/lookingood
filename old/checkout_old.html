@@ -1,0 +1,151 @@
+<html>
+    <head>
+  <title>체크아웃페이지</title>
+</head>
+
+<style>
+  @font-face {
+    font-family: NotoSansCJKkr;
+    src: url('/fonts/NotoSansCJKkr-Regular.otf');
+  }
+
+  div#sub_content {
+    position: relative;
+    width: 1000px;
+  }
+
+  /* TABLE */
+  table.Rectangle {
+    width: 1000px;
+    height: 298px;
+    box-shadow: 2px 2px 10px 0 rgba(195, 195, 195, 0.5);
+    background-color: #ffffff;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  td {
+    text-align: left;
+    vertical-align: top;
+  }
+
+  td {
+    border: solid 1px #e5e5e5;
+  }
+
+  /* TEXT */
+  div.title1 {
+    width: 92px;
+    height: 37px;
+    background-color: white;
+    font-family: NotoSansCJKkr;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4b4b4b;
+
+    margin-bottom: 17px;
+  }
+
+  .image>td.image {
+    width: 149px;
+    height: 149px;
+  }
+
+  .contents>div.stitle {
+    width: 109px;
+    height: 30px;
+    background-color: white;
+    font-family: NotoSansCJKkr;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.31;
+    letter-spacing: normal;
+    color: #a0a0a0;
+
+    margin-top: 12px;
+    margin-left: 32px;
+  }
+
+  .contents>div.sname {
+    width: 232px;
+    height: 25px;
+    background-color: white;
+    font-family: NotoSansCJKkr;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4b4b4b;
+
+    margin-left: 31px;
+  }
+
+  td.contents {
+    width: 407px;
+    height: 149px;
+  }
+
+  td.prescription,
+  td.quantity,
+  td.price {
+    width: 148px;
+    height: 149px;
+    background-color: rgba(40, 210, 250, 0.07);
+  }
+  
+  .prescription
+
+
+  img {
+    width: 149px;
+    height: 149px;
+    object-fit: contain;
+  }
+</style>
+
+<body>
+  <div id="container">
+    <div id="contents">
+      <div id="sub_content">
+        <div class="reserved-product"></div>
+        <div class="title1">예약상품</div>
+        <div class="table">
+          <tr>
+            <td class='image'>
+              <img src="img/invalid-name.png" srcset="img/invalid-name@2x.png 2x,
+             img/invalid-name@3x.png 3x" class="\-">
+            </td>
+            <td class='contents'>
+              <div class='stitle'>
+                루킹굿(콘택트 렌즈)
+              </div>
+              <div class='sname'>
+                Lucid - G.BROWN
+              </div>
+            </td>
+            <td class='prescription'>도수</td>
+            <td class='quantity'>수량</td>
+            <td class='price'>상품금액</td>
+          </tr>
+          <tr>
+            <td class='image'>image</td>
+            <td class='contents'>good</td>
+            <td class='prescription'>도수</td>
+            <td class='quantity'>수량</td>
+            <td class='price'>상품금액</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</body></html>
