@@ -1,0 +1,77 @@
+<html>
+  <head>
+  <title>Coupon Check</title>
+  <link rel="stylesheet" href="_coupon_check.css">
+</head>
+
+<body>
+  <div class="survey_wrapper" id="coupon_check">
+    <div class="survey_header">
+      <a class="close" onclick="$('#coupon_check').hide();">
+        <img src="img/btn-survey-cancel.png" srcset="img/btn-survey-cancel@2x.png 2x, img/btn-survey-cancel@3x.png 3x" class="">
+      </a>
+
+    </div>
+    <div class="survey_container">
+      <div class="ls_page" id="page_5">
+        <div class="ls_header">렌즈 구매 15,000원 권</div>
+        <div class="ls_sub_header" style="text-align:center;">루킹굿 렌즈가격에서 차감됩니다.<br /><span style="font-size:14px;">*본 쿠폰은 루킹굿에서 구매한 제품에만 적용되며, 타 쿠폰과 중복 적용되지 않습니다.</span><br /><span style="font-weight:500">안경사님! <br />고유코드 4자리를 넣어주세요!</span>
+          <div style="height:40px;background-color:#fff;border-radius:20px; width: 60%;margin-left:20%;position:relative">
+            <input type="number" id="cc_code" onchange="checkCode()" min="0" max="9999" style="position: absolute;top: 5px;left: 50%;text-align: center;border: 0;width: 160px;margin-left: -80px;font-size: 17px;font-weight: 500;color: #595757;">
+          </div>
+        </div>
+      </div>
+      <div class="ls_page" id="page_2">
+        <div class="ls_header" id="cc_chain_name"></div>
+        <div class="ls_sub_header" style="text-align:center;margin-top:180px;">위 안경원이 맞나요?
+          <div class="cc_confirm_chain_btn_wrapper">
+            <div class="cc_confirm_chain_btn" style="margin-left: -125px;" onclick="cc_wrongChain()"><span>아니요</span><span><small>재입력</small></span>
+            </div>
+            <div class="cc_confirm_chain_btn" style="margin-left: 20px;" onclick="cc_confirmChain()"><span>맞습니다</span><span><small>인증완료</small></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="ls_page" id="page_6">
+        <div class="ls_header" id="cc_chain_name">안경원을 선택해주세요.</div>
+        <div class="ls_sub_header" style="text-align:center;margin-top:0px;">
+          <div id="cc_multiple_chains">
+            <div class="cc_chain_item" onclick="selectChain('홍대 본점')">홍대 본점</div>
+          </div>
+          <div class="cc_confirm_chain_btn_wrapper">
+            <div class="cc_confirm_chain_btn" style="margin-left: -125px;" onclick="cc_wrongChain()"><span>재입력</span><span><small></small></span>
+            </div>
+            <div class="cc_confirm_chain_btn" style="margin-left: 20px;" onclick="cc_confirmChain()"><span>인증완료</span><span><small></small></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="ls_page" id="page_3">
+        <div class="ls_header">혜택 인증이<br>완료되었습니다.</div>
+        <div class="ls_sub_header" style="text-align:center;margin-top:240px;">
+          <div style="height:40px;background-color:#fff;border-radius:20px; width: 60%;margin-left:20%;position:relative;font-size:16px;font-weight:500;color:#595757;" onclick="showLensePrice()">루킹굿 렌즈가격 보기</div>
+          <div style="text-align:center;font-size:12px;font-weight:300;color:#595757;margin-top:-60px;">*문의사항은 고객센터(02-6380-7007)로 연락주세요.</div>
+        </div>
+      </div>
+      <div class="ls_page" id="page_4">
+        <div class="ls_header">이미 사용한 쿠폰입니다.</div>
+        <div class="ls_sub_header" style="text-align:center;margin-top:240px;">
+          <div style="height:40px;background-color:#fff;border-radius:20px; width: 60%;margin-left:20%;position:relative;font-size:16px;font-weight:500;color:#595757;" onclick="$('#coupon_check').hide();">닫기</div>
+          <div style="text-align:center;font-size:12px;font-weight:300;color:#595757;margin-top:-60px;">*문의사항은 고객센터(02-6380-7007)로 연락주세요.</div>
+        </div>
+      </div>
+      <div class="ls_page" id="page_1">
+        <div class="ls_header">유효하지 않은<br>쿠폰입니다.</div>
+        <div class="ls_sub_header" style="text-align:center;margin-top:240px;">
+          <div style="height:40px;background-color:#fff;border-radius:20px; width: 60%;margin-left:20%;position:relative;font-size:16px;font-weight:500;color:#595757;" onclick="$('#coupon_check').hide();">닫기</div>
+          <div style="text-align:center;font-size:12px;font-weight:300;color:#595757;margin-top:-60px;">*문의사항은 고객센터(02-6380-7007)로 연락주세요.</div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</body></html>

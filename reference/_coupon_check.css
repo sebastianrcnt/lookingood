@@ -1,0 +1,53 @@
+.cc_confirm_chain_btn_wrapper {
+  text-align: center;
+  position: relative;
+}
+
+.cc_confirm_chain_btn {
+  margin: 0 10px;
+  display: inline-block;
+  background-color: #fff;
+  width: 105px;
+  height: 35px;
+  border-radius: 46px;
+
+}
+
+.cc_confirm_chain_btn {
+  font-size: 17px;
+  font-weight: 500;
+  color: #595757;
+  top: 5px;
+  line-height: 1;
+  text-align: center;
+  padding: 9px;
+  position: absolute;
+  left: 50%;
+}
+
+.cc_confirm_chain_btn > span {
+  display: block;
+}
+
+.cc_confirm_chain_btn > span > small {
+  font-size: 10px;
+}
+
+
+#cc_multiple_chains {
+              font-size: 0;
+            }
+
+            #cc_multiple_chains>.cc_chain_item {
+              font-size: 17px;
+              background-color: #fff;
+              width: 80%;
+              margin-left: 10%;
+              border-radius: 20px;
+              margin-bottom: 20px;
+            }
+
+            #cc_multiple_chains>.active {
+              background-color: #595757 !important;
+              color: #fff !important;
+            }
