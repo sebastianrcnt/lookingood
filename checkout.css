@@ -1,8 +1,7 @@
 /* General */
-div.wrapper {
-  clear:both;
-  min-width:1000px;
-  margin:auto;
+div.wrapper>div {
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .areatitle {
@@ -31,6 +30,7 @@ div.wrapper {
 .area1 {
   width: 1000px;
   margin-bottom: 94px;
+  
 }
 
 .area1 .grid-container {
@@ -211,9 +211,14 @@ div.totalright {
   grid-column-start: 1;
   grid-column-end: 5;
   height: 84px;
-
   text-align: right;
   vertical-align: top;
+}
+
+.area1 .totalright {
+  grid-column-start:5;
+  grid-column-end:6;
+  width:147px;
 }
 
 .area1 .label4 {
@@ -332,6 +337,7 @@ div.totalright {
 
 .area3 {
   margin-top: 77px;
+  width:1000px;
   position:relative;
 }
 
