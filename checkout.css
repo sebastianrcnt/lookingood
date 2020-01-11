@@ -369,6 +369,7 @@ div.totalright {
 .area3 .submitbutton {
   /*      border: solid 1px black;*/
   text-align: center;
+  width:1000px;
   margin-top: 75px;
   margin-bottom: 137px;
 }
