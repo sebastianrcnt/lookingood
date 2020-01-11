@@ -1,0 +1,45 @@
+body {
+  width: 2000px;
+  
+}
+div.area1 {
+  width:1000px;
+  position:relative;
+/*  border: 1px solid black;*/
+}
+
+.area1 .title_img {
+  width: 1000px;
+  height: 695px;
+  object-fit:fill;
+/*  position:absolute;*/
+}
+
+.area1 .btn_search {
+  width: 500px;
+  height: 70px;
+  position:absolute;
+  top:532px;
+  right:250px;
+}
+
+div.area2 {
+  width:1000px;
+  position: relative;
+  background-color: rgba(0, 121, 255, 0.15);
+  
+  text-align: center;
+}
+
+.area2 img.img_howto {
+  margin-top:66px;
+  margin-bottom:107px;
+}
+
+.area2 img.btn_shop {
+  position: absolute;
+  top:1574px;
+  right:315px;
+  left:315px;
+  bottom
+}
