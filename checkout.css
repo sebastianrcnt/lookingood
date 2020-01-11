@@ -1,4 +1,10 @@
 /* General */
+div.wrapper {
+  clear:both;
+  min-width:1000px;
+  margin:auto;
+}
+
 .areatitle {
   width: auto;
   height: 37px;
@@ -28,7 +34,7 @@
 }
 
 .area1 .grid-container {
-  display: inline-grid;
+  display: grid;
   grid-template-columns: auto auto auto auto auto;
   grid-gap: 0px;
 
@@ -305,7 +311,7 @@ div.totalright {
 }
 
 .area2 input.input1 {
-  width: 920px;
+  width: 918px;
   height: 40px;
   border: solid 1px #d8d8d8;
   background-color: #ffffff;
@@ -326,6 +332,7 @@ div.totalright {
 
 .area3 {
   margin-top: 77px;
+  position:relative;
 }
 
 .area3 textarea {
