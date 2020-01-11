@@ -379,6 +379,11 @@ div.totalright {
   height: 60px;
   object-fit: contain;
   background-color: #28d2fa;
+  
+  border: 0px;
+}
+
+.area3 span {
   font-family: NotoSansCJKkr;
   font-size: 20px;
   font-weight: bold;
@@ -388,4 +393,8 @@ div.totalright {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+}
+
+.area3 button:hover {
+  opacity: 0.6;
 }
