@@ -35,19 +35,19 @@
 
 
 #cc_multiple_chains {
-              font-size: 0;
-            }
+  font-size: 0;
+}
 
-            #cc_multiple_chains>.cc_chain_item {
-              font-size: 17px;
-              background-color: #fff;
-              width: 80%;
-              margin-left: 10%;
-              border-radius: 20px;
-              margin-bottom: 20px;
-            }
+#cc_multiple_chains > .cc_chain_item {
+  font-size: 17px;
+  background-color: #fff;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
 
-            #cc_multiple_chains>.active {
-              background-color: #595757 !important;
-              color: #fff !important;
-            }
+#cc_multiple_chains > .active {
+  background-color: #595757 !important;
+  color: #fff !important;
+}
