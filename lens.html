@@ -1,0 +1,366 @@
+<html>
+
+<head>
+	<title>goods info</title>
+</head>
+<style>
+	@font-face {
+		font-family: NotoSansCJKkr;
+		src: url('/fonts/NotoSansCJKkr-Regular.otf');
+	}
+
+	@font-face {
+		font-family: NotoSansCJKkr-Bold;
+		src: url('/fonts/NotoSansCJKkr-Bold.otf');
+	}
+
+	* {
+		font-family: NotoSansCJKkr;
+	}
+
+	.hidden {
+		visibility: hidden;
+	}
+
+
+	.bold {
+		font-family: NotoSansCJKkr-Bold;
+	}
+
+	._wrapper {
+		width: 1000px;
+		height: 2000px;
+	}
+
+	div {
+		box-sizing: border-box;
+	}
+
+	._area1 {
+		width: 1000px;
+		height: 617px;
+	}
+
+	._area1>div {
+		float: left;
+		width: 50%;
+	}
+
+	._area1 ._imageBox {
+		height: 100%;
+	}
+
+	._area1 ._imageBox img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	._area1 ._productBox {
+		height: 100%;
+		padding-left: 60px;
+		padding-top: 44px;
+	}
+
+	._row {
+		margin-bottom: 10px;
+		display: inline-block;
+	}
+
+	._title {
+		width: 109px;
+		height: 30px;
+		font-size: 13px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 2.31;
+		letter-spacing: normal;
+		color: #a0a0a0;
+	}
+
+	._content {
+		width: 232px;
+		height: 25px;
+		font-size: 20px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #4b4b4b;
+	}
+
+	._total ._content {
+		color: #28d2fa;
+	}
+
+	._double>._col {
+		float: left;
+		width: 50%;
+	}
+
+	._line {
+		border-top: 1px solid #e5e5e5;
+		/*		background-color: e5e5e5;*/
+	}
+
+	._double ._line {
+		margin-top: 8px;
+		width: 175px;
+		height: 1px;
+	}
+
+	._single ._line {
+		margin-top: 8px;
+		width: 380px;
+		height: 1px;
+	}
+
+	/*	Quantity Selectors */
+	._quantity-wrapper {
+		width: 175px;
+		height: 30px;
+		position: relative;
+		margin-top: 4px;
+
+		text-align: center;
+	}
+
+	._quantity-wrapper button {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		border: none;
+		background-color: #dcdcdc;
+		border-radius: 12px;
+	}
+
+
+	._quantity-wrapper button._minus {
+		left: 0;
+	}
+
+	._quantity-wrapper button._plus {
+		right: 0;
+	}
+</style>
+
+<body>
+	<div class="_wrapper">
+		<div class="_area1">
+			<div class="_imageBox">
+				<img src="./screenshot.png">
+			</div>
+			<div class="_productBox">
+
+				<div class="_row _single">
+					<div class="_col">
+						<div class="_title">
+							루킹굿(콘택트 렌즈)
+						</div>
+						<div class="_content bold">
+							Lucid - G.BROWN
+						</div>
+						<div class="_line"></div>
+					</div>
+				</div>
+				<div class="_row _double">
+					<div class="_col">
+						<div class="_title">
+							정가
+						</div>
+						<div class="_content">
+							113,000원
+						</div>
+						<div class="_line"></div>
+					</div>
+					<div class="_col">
+						<div class="_title">
+							판매가
+						</div>
+						<div class="_content bold">
+							29,000원
+						</div>
+						<div class="_line"></div>
+
+					</div>
+				</div>
+				<div class="_row _double">
+					<div class="_col">
+						<div class="_title">
+							배송비
+						</div>
+						<div class="_content">
+							무료
+						</div>
+						<div class="_line"></div>
+					</div>
+					<div class="_col">
+						<div class="_title">
+							예약방식
+						</div>
+						<div class="_content">
+							예약수령
+						</div>
+						<div class="_line"></div>
+					</div>
+				</div>
+				<div class="_row _single">
+					<div class="_col">
+						<div class="_title">
+							방문 안경원 선택
+						</div>
+						<div class="_content">
+							-
+						</div>
+						<div class="_line"></div>
+					</div>
+				</div>
+				<div class="_row _double">
+					<div class="_col">
+						<div class="_title">
+							왼쪽 도수
+						</div>
+						<div class="_content">
+							-2.00
+						</div>
+						<div class="_line"></div>
+						<div class="_quantity-wrapper _left">
+							<button class="_minus">-</button>
+							<span class="_quantity-label">
+								1
+							</span>
+							<button class="_plus">+</button>
+						</div>
+					</div>
+					<div class="_col">
+						<div class="_title">
+							오른쪽 도수
+						</div>
+						<div class="_content">
+							-1.75
+						</div>
+						<div class="_line"></div>
+						<div class="_quantity-wrapper _right">
+							<button class="_minus">-</button>
+							<span class="_quantity-label">
+								1
+							</span>
+							<button class="_plus">+</button>
+						</div>
+					</div>
+				</div>
+				<div class="_row _double _total">
+					<div class="_col hidden">
+						<!-- Hidden Element -->
+						<div class="_title">
+						</div>
+						<div class="_content bold">
+						</div>
+						<div class="_line"></div>
+
+					</div>
+					<div class="_col">
+						<div class="_title">
+							총 상품금액
+						</div>
+						<div class="_content bold">
+							59,000원
+						</div>
+						<div class="_line"></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<style>
+			._area2 {
+				padding-top: 73px;
+				min-height: 208px;
+				vertical-align: middle;
+			}
+
+			._area2 h1 {
+				font-size: 25px;
+				font-weight: bold;
+				color: #28d2fa;
+			}
+
+			._area2>div {
+				float: left;
+				width: 50%;
+			}
+
+			._area2 ._details-container p {
+				font-size: 15px;
+				line-height: 15px;
+				color: #4b4b4b;
+			}
+
+			._area2 ._details>div {
+				/*				border: 1px solid black;*/
+				float: left;
+			}
+
+			._area2 ._details>._left {
+				width: 42%;
+			}
+
+			._area2 ._details>._right {
+				width: 58%;
+			}
+		</style>
+		<div class="_area2">
+			<div class="_details-container">
+				<h1>Details.</h1>
+				<div class="_details">
+					<div class="_left">
+						<p><b>원산지</b>: 대한민국</p>
+						<p><b>재질</b>: 실리콘하이드로겔</p>
+						<p><b>사용기간</b>: 1개월</p>
+						<p><b>수량</b>: 2개입</p>
+					</div>
+					<div class="_right">
+						<p><b>색상</b>: 브라운</p>
+						<p><b>DIA</b>: 14.00mm</p>
+						<p><b>그래픽</b>: 12.6mm</p>
+						<p><b>함수율</b>: 46%</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="_event">
+				<img src="./images/lens/event.png" alt="" style="width:500px; height: 208px;object-fit:contain">
+			</div>
+		</div>
+		<!--Override-->
+		area2 - area3
+		<div class="_area3">
+<!--
+			<style>
+				.item_goods_tab {
+					border: 1px solid black;
+					height: 86px;
+					background-color: #fff;
+					position: sticky;
+					top: 45px;
+					z-index: 99999;
+				}
+			</style>
+-->
+			<div class="item_goods_tab">
+				<ul>
+					<li class="description"><a href="#description"><span>상품설명</span></a></li>
+					<li class="detail"><a href="#detail"><span>상세정보</span></a></li>
+					<li class="reviews"><a href="#reviews"><span>고객후기</span></a></li>
+					<li class="qna on"><a href="#qna"><span>상품문의</span></a></li>
+					<li class="faq"><a href="#faq"><span>FAQ</span>
+						</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</body></html>

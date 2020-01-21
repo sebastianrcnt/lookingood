@@ -1,0 +1,130 @@
+{*** 쇼핑몰 메인본문 | main/index.php ***}
+{ # header }
+
+  <div style="max-width:1200px;margin:0 auto;" class="">
+			{=includeWidget('proc/_slider_banner.html', 'bannerCode', '2469381379')}
+  </div>
+<!-- 	<div style="" class="lg_prod">
+		{=includeFile('proc/_hashtag_story.html')}
+	</div> -->
+
+    <style>
+		.main_goods_cont {
+			text-align: center;
+		}
+		
+        .main_goods_cont .top {
+            font-size: 27px;
+            font-weight: bold;
+            color: #4c4948;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        .main_goods_cont .top > img.arrow-right {
+            position:relative;
+            top: 10px;
+            margin-left:15px;
+        }
+			
+    </style>
+
+    <div class="main_goods_cont" style="width:1050px;margin-top:50px;">
+			<style>
+				div.tab_goods_9 > a.tab_btn {
+					top:216px !important;
+				}
+			</style>
+<!--         <div class="top lg_prod">
+            루킹굿 추천
+        </div> -->
+        {=includeWidget('goods/_goods_display_main.html','sno','9')}
+    </div><!-- //main_goods_cont -->
+
+    <div class="main_goods_cont lg_dev" style="width:1050px;margin-top:70px;">
+			{=includeFile('proc/_hashtag_story.html')}
+    </div>
+
+    <div class="main_goods_cont" style="width:1050px;margin-top:70px;">
+			{=includeFile('proc/_main_recomm.html')}
+    </div>
+
+
+
+    
+
+    <div class="main_goods_cont" style="width:1050px;">
+<!--         <a class="top lg_prod" href="/goods/goods_list.php?cateCd=001001">
+            안경 베스트
+            <img src="/data/skin/front/SGA/img/custom/black-arrow.png" srcset="/data/skin/front/SGA/img/custom/black-arrow@2x.png 2x, /data/skin/front/SGA/img/custom/black-arrow@3x.png 3x" class="arrow-right">
+        </a> -->
+        {=includeWidget('goods/_goods_display_main.html','sno','10')}
+    </div><!-- //main_goods_cont -->
+
+    <div class="main_goods_cont" style="width:1050px;">
+<!--         <a class="top lg_prod" href="/goods/goods_list.php?cateCd=001002">
+            선글라스 베스트
+            <img src="/data/skin/front/SGA/img/custom/black-arrow.png" srcset="/data/skin/front/SGA/img/custom/black-arrow@2x.png 2x, /data/skin/front/SGA/img/custom/black-arrow@3x.png 3x" class="arrow-right">
+        </a> -->
+        {=includeWidget('goods/_goods_display_main.html','sno','11')}
+    </div><!-- //main_goods_cont -->
+
+    <style>
+        .main_banner_bottom{
+            width: 1000px;
+            text-align: center;
+
+        }
+
+        .main_banner_bottom > a > img {
+            width: 100%;
+/*             height: 270px; */
+            object-fit: contain;
+        }
+    </style>
+
+    <div class="main_goods_cont main_banner_bottom" style="margin-bottom:80px;">
+      
+      <a href="/main/html.php?htmid=main/try_on.html">
+              <img src="https://opticlife.hgodo.com/main/banner/main-middle-banner.png"
+             srcset="https://opticlife.hgodo.com/main/banner/main-middle-banner@2x.png 2x,
+                     https://opticlife.hgodo.com/main/banner/main-middle-banner@3x.png 3x"
+             class="Main_bottom_banner">
+      </a>
+    </div>
+
+    <div class="sns_review">
+        <style>
+          .sns_review {
+            text-align:center;
+          }
+        .sns_review > .top {
+            font-size: 27px;
+            font-weight: bold;
+            color: #4c4948;
+            margin-bottom: 24px;
+        }  
+          .sns_review_wrapper {
+            background-color:#eaf7fb;
+          }
+      </style>
+        <div class="top">
+            SNS 고객 체험 후기
+        </div>
+        <div class="sns_review_wrapper">
+            {=includeFile('proc/_main_sns.html')}
+        </div>
+    </div>
+    
+    
+    <div class="main_goods_cont main_banner_bottom" style="margin-top:50px;">
+      
+      <a href="/main/html.php?htmid=main/sns-event.html">
+              <img src="https://opticlife.hgodo.com/main/banner/main-bottom-banner.png"
+             srcset="https://opticlife.hgodo.com/main/banner/main-bottom-banner@2x.png 2x,
+                     https://opticlife.hgodo.com/main/banner/main-bottom-banner@3x.png 3x"
+             class="Main_bottom_banner">
+      </a>
+    </div>
+
+{ # footer }

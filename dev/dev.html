@@ -1,0 +1,102 @@
+{*** 상단 기본파일_메인 | main/index.php ***}
+<script type="text/javascript" src="../../js/custom.js"></script>
+<!--
+<link href='https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Abril+Fatface|Archivo+Black|Codystar|Lora:400,700|Fredericka+the+Great|Gravitas+One|Bad+Script|Timmana|Concert+One|Josefin+Sans:400,700|Holtwood+One+SC|Josefin+Slab:400,700|Fredoka+One|Calligraffitti|Tangerine|Monoton|EB+Garamond|Oswald:400,700,300|Open+Sans+Condensed:300|Pacifico|Dancing+Script|Chewy|Kaushan+Script|Cinzel:400,900|Special+Elite|Playfair+Display+SC:400,900,700|Julius+Sans+One|Six+Caps|Cinzel+Decorative:400,700|Diplomata' rel='stylesheet' type='text/css'>
+-->
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+
+<script>
+function closeHeaderTopBanner(elem) {
+    $(elem).parent().remove();   
+    // 쿠키 처리
+}
+</script>
+
+<div id="header" class="">
+<!--     <div class="header_top_banner lg_dev">
+        <span>내 근처 루킹굿 안경원에서 써보고 구매하세요!</span>
+        <a href="#" onclick="closeHeaderTopBanner(this)">X</a>
+    </div> -->
+    <div class="header_top">
+        <div class="header_top_cont" style="width:1000px">
+
+					<style>
+						ul.top_member_box > li > a {
+                            font-size: 12px;
+                            font-weight: bold;
+                            color:#595757;
+						}
+					</style>
+					<ul class="top_member_box">
+						<!--{ ? gd_is_login() === false }-->
+                        <li><a href="../member/join_method.php" style="">회원가입</a><span class="txt_bar"></span></li>
+                        <li><a href="../member/login.php" style="">로그인</a><span class="txt_bar"></span></li>
+						<!--{ : }-->
+						<li><a href="../mypage/index.php" style="">마이페이지</a><span class="txt_bar"></span></li>
+						<li><a href="../member/logout.php?returnUrl={=logoutReturnUrl}">로그아웃</a><span class="txt_bar"></span></li>
+                        <!--{ / }-->
+                        <li><a href="../order/cart.php">{=__('장바구니')} </a><span class="txt_bar"></span></li> <!-- <div class="cart_goods_cnt">{=dataCartGoodsCnt()}</div> -->
+                        <li><a href="/main/html.php?htmid=main/try_on.html">{=__('안경원 시착')} </a></li>
+					</ul>
+
+        </div><!-- //header_top_cont -->
+        
+    </div>
+    <div class="inner">
+		<style>
+			.h1_logo > a > img {
+				height: 60px;	
+			}
+		</style>
+            <div class="h1_logo"><!--{ @dataBanner('4238483832') }-->{.tag}<!--{ / }--></div>
+    </div>
+
+
+
+	<div id="gnv" style="">	
+		<div class="shadow"><img src="../../upload/shadow.png"></div>
+		<div class="header_gnb">
+      <div class="gnb" style="width:1000px; padding:5px 0;">
+          <!-- 상단 카테고리 출력 시작 -->
+          {=includeWidget('proc/category_side', 'type', 'top','cateType','cate','menuType','all')}
+          <!-- 상단 카테고리 출력 끝 -->
+
+          {=includeWidget('proc/_header_search.html')}
+
+      </div><!-- //gnb -->
+
+    </div><!-- //header_gnb -->
+	</div><!-- //gnv -->
+	
+
+
+
+
+		
+		<script type="text/javascript">
+		<!--
+			$(function(){
+			   var menupos = $(".sub_content").offset().top;
+			   $(window).scroll(function(){
+				  if($(window).scrollTop() >= menupos) {
+					 $(".brands").css("position","fixed");
+					 $(".brands").css("top","62px");
+					 } else {
+					 $(".brands").css("position","relative");
+					 $(".brands").css("top","");
+				  }
+			   });
+			});
+		//-->
+		</script>
+		<!--
+		<div class="brands">
+			<a href="/goods/brand.php"><img src="../../upload/brandlist.gif"></a>
+			<div class="shadow"><img src="../../upload/shadow.png"></div>
+		</div>
+		-->
+</div>
+
+
+<!-- //header -->

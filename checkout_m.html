@@ -1,0 +1,274 @@
+<html>
+
+<head>
+	<title>
+		체크아웃페이지
+	</title>
+</head>
+<style>
+	@font-face {
+		font-family: NotoSansCJKkr;
+		src: url('/fonts/NotoSansCJKkr-Regular.otf');
+	}
+
+	* {
+		font-family: NotoSansCJKkr;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+
+	._wrapper div {
+		/*		border: 1px solid black;*/
+	}
+
+	._wrapper {
+		min-width: 375px;
+	}
+
+	._item {
+		margin: 20px 15px;
+	}
+
+	._item>div {
+		vertical-align: middle;
+	}
+
+	._item._product {
+		display: grid;
+		grid-template-columns: 83px auto;
+		grid-template-rows: 83px auto auto auto;
+		box-shadow: 2px 2px 8px 0 rgba(195, 195, 195, 0.5);
+	}
+
+	._item ._prescription,
+	._quantity,
+	._price {
+		min-height: 45px;
+		grid-column-start: 1;
+		grid-column-end: 3;
+		border-top: solid 1px #d8d8d8;
+		background-color: rgba(40, 210, 250, 0.07);
+	}
+
+	._item h1 {
+		font-size: 14px;
+		color: #4b4b4b;
+	}
+
+	._item ._image {
+		width: 83px;
+		height: 83px;
+	}
+
+	._item * {
+		position: relative;
+	}
+
+	p.bold {
+		font-weight: bold;
+	}
+
+	p.light {
+		color: #a0a0a0;
+	}
+
+	p.dark {
+		color: #4b4b4b;
+	}
+
+	/*	selectors excluding product info*/
+	._item p {
+		font-size: 14px;
+		margin-left: 10px;
+	}
+
+	._item select {
+		position: absolute;
+		top: 15px;
+		right: 10px;
+		width: 70px;
+	}
+
+	._item._product input {
+		position: absolute;
+		top: 15px;
+		right: 10px;
+		width: 70px;
+	}
+
+	._item._product label {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		color: #4b4b4b;
+	}
+
+	._item button._delete {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 18px;
+		height: 18px;
+		border-radius: 9px;
+		border: solid 1px #d8d8d8;
+	}
+
+	/*	selectors on product info*/
+	._item ._info p {
+		line-height: 0.71;
+	}
+
+	._item._total {
+		position: relative;
+		background-color: #4b4b4b;
+		height: 85px;
+	}
+
+	._item._total div {
+		position: absolute;
+		margin: 0;
+	}
+
+	._item._total ._total-price {
+		top: 10px;
+		right: 11px;
+		font-size: 16px;
+		color: #ffffff;
+	}
+
+	._item._total ._discounted-price {
+		top: 43px;
+		right: 11px;
+		font-size: 20px;
+		color: #28d2fa;
+	}
+
+	._item._customer-info ._line {
+		width: 100%;
+		height: 1px;
+		background-color: #d8d8d8;
+		margin-bottom: 14px;
+	}
+	._customer-info ._row {
+		margin-bottom: 10px;
+	}
+	
+	._customer-info label {
+		margin: 0;
+		font-size: 14px;
+		line-height: 2;
+		letter-spacing: normal;
+		color: #4b4b4b;
+	}
+	
+	._customer-info input {
+		display:inline;
+		height: 40px;
+		align-self: flex-end;
+	}
+</style>
+
+<body>
+	<div class="_wrapper">
+		<div class="_item _title">
+			<h1>예약상품</h1>
+		</div>
+		<div class="_item _product">
+			<div class="_image">
+				<img src="./images/checkout_m/2019-12-26-11-51-17.jpg">
+			</div>
+			<div class="_info">
+				<p class='light bold'>루킹굿</p>
+				<p class='dark bold'>Lucid G Brown</p>
+				<button class="_delete"></button>
+			</div>
+			<div class="_prescription">
+				<p class="light _label">도수</p>
+				<select name="" id="">
+					<option value="">-1.75</option>
+					<option value="">-2.00</option>
+					<option value="">-2.25</option>
+					<option value="">-2.50</option>
+				</select>
+			</div>
+			<div class="_quantity">
+				<p class="light">수량</p>
+				<input type="number" name="" id="">
+			</div>
+			<div class="_price">
+				<p class="light">상품금액</p>
+				<label for="">30,000원</label>
+			</div>
+		</div>
+		<div class="_item _product">
+			<div class="_image">
+				<img src="./images/checkout_m/2019-12-26-11-51-17.jpg">
+			</div>
+			<div class="_info">
+				<p class='light bold'>루킹굿</p>
+				<p class='dark bold'>Lucid G Brown</p>
+				<button class="_delete"></button>
+			</div>
+			<div class="_prescription">
+				<p class="light _label">도수</p>
+				<select name="" id="">
+					<option value="">-1.75</option>
+					<option value="">-2.00</option>
+					<option value="">-2.25</option>
+					<option value="">-2.50</option>
+				</select>
+			</div>
+			<div class="_quantity">
+				<p class="light">수량</p>
+				<input type="number" name="" id="">
+			</div>
+			<div class="_price">
+				<p class="light">상품금액</p>
+				<label for="">30,000원</label>
+			</div>
+		</div>
+		<div class="_item _product">
+			<div class="_image">
+				<img src="./images/checkout_m/2019-12-26-11-51-17.jpg">
+			</div>
+			<div class="_info">
+				<p class='light bold'>루킹굿</p>
+				<p class='dark bold'>Lucid G Brown</p>
+				<button class="_delete"></button>
+			</div>
+			<div class="_prescription">
+				<p class="light _label">도수</p>
+				<select name="" id="">
+					<option value="">-1.75</option>
+					<option value="">-2.00</option>
+					<option value="">-2.25</option>
+					<option value="">-2.50</option>
+				</select>
+			</div>
+			<div class="_quantity">
+				<p class="light">수량</p>
+				<input type="number" name="" id="">
+			</div>
+			<div class="_price">
+				<p class="light">상품금액</p>
+				<label for="">30,000원</label>
+			</div>
+		</div>
+		<div class="_item _total">
+			<div class="_total-price">총 상품 금액: 30,000원</div>
+			<div class="_discounted-price">1+1 할인 특가: 20,000원</div>
+		</div>
+		<div class="_item _customer-info">
+			<h1>예약 정보</h1>
+			<div class="_line"></div>
+			<div class="_row">
+				<label for="">예약지</label>
+				<input type="text" name="" id="">
+			</div>
+
+		</div>
+	</div>
+</body></html>

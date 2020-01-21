@@ -1,25 +1,68 @@
 <html>
-  <head>
+<style>
+  ._wrapper > div {
+    margin: 0 auto;
+  }
+  div._area1 {
+    width: 1000px;
+    position: relative;
+    /*  border: 1px solid black;*/
+  }
+
+  ._area1 ._title_img {
+    width: 1000px;
+    height: 695px;
+    object-fit: fill;
+    /*  position:absolute;*/
+  }
+
+  ._area1 ._btn_search {
+    width: 500px;
+    height: 70px;
+    position: absolute;
+    top: 532px;
+    right: 250px;
+  }
+
+  div._area2 {
+    width: 1000px;
+    position: relative;
+    background-color: rgba(0, 121, 255, 0.15);
+
+    text-align: center;
+  }
+
+  ._area2 img._img_howto {
+    margin-top: 66px;
+    margin-bottom: 107px;
+  }
+
+  ._area2 img._btn_shop {
+    position: absolute;
+    top: 1574px;
+    right: 315px;
+    left: 315px;
+    bottom
+  }
+</style>
+
+<head>
   <title>렌즈예약수령랜딩</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="reserve.css">
 </head>
-
+{#header}
 <body>
-  <div class="area1">
-    <img src="img/reserve/title-img.png" srcset="img/reserve/title-img@2x.png 2x,
-             img/reserve/title-img@3x.png 3x" class="title_img">
-    <a href="#">
-      <img src="img/reserve/btn-search.png" srcset="img/reserve/btn-search@2x.png 2x,
-             img/reserve/btn-search@3x.png 3x" class="btn_search">
-    </a>
+<div class="_wrapper">
+  <div class="_area1">
+    <img src="images/reserve/title-img.png" class="_title_img">
+    <img src="images/reserve/btn-search.png" class="_btn_search">
   </div>
-  <div class="area2">
-    <img src="img/reserve/img-howto.png" srcset="img/reserve/img-howto@2x.png 2x,
-             img/reserve/img-howto@3x.png 3x" class="img_howto">
-    <a href="#">
-      <img src="img/reserve/btn-shop.png" srcset="img/reserve/btn-shop@2x.png 2x,
-             img/reserve/btn-shop@3x.png 3x" class="btn_shop">
-    </a>
-  </div>
-</body></html>
+  <div class="_area2">
+    <img src="images/reserve/img-howto.png" class="_img_howto">
+    <img src="images/reserve/btn-shop.png" class="_btn_shop">
+  </div>ˇ
+</div>
+</body>
+
+{#footer}
+</html>
