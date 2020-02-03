@@ -1,0 +1,130 @@
+<style>
+  .sns_review_wrapper {
+    background-color: #eaf7fb;
+    height: 270px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    overflow: auto;
+  }
+
+  ._visiblearea {
+    width: 1000px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0px;
+    scroll-behavior: smooth;
+  }
+
+  ._visiblearea .item {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-right: 13px;
+  }
+
+  ._visiblearea .item img {
+    object-fit: cover;
+    width: 200px;
+  }
+
+  ._outer {
+    position: relative;
+  }
+
+  ._imgbox {
+    position: absolute;
+    top: calc(50% - 18px);
+    left: calc(50% - 18px);
+  }
+
+  img.arrow {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    border-radius: 50%;
+  }
+
+  img.arrow.right-arrow {
+    left: 500px;
+  }
+
+  img.arrow.left-arrow {
+    right: 500px;
+    transform: rotate(180deg);
+  }
+
+</style>
+
+<div class="top">
+  SNS 고객 체험 후기
+</div>
+<div class="sns_review_wrapper">
+  <div class="_imgbox">
+
+    <img src="./btn-slide-blue.png" srcset="./btn-slide-blue@2x.png 2x,
+             ./btn-slide-blue@3x.png 3x" class="arrow right-arrow" onclick="session.scrollRight()">
+  </div>
+  <div class="_imgbox">
+    <img src="./btn-slide-blue.png" srcset="./btn-slide-blue@2x.png 2x,
+             ./btn-slide-blue@3x.png 3x" class="arrow left-arrow" onclick="session.scrollLeft()">
+  </div>
+  <div class="_visiblearea">
+    <div class="item">
+      <a href="https://blog.naver.com/ageha181818/221675793707" target="_blank">
+        <img src="https://opticlife.hgodo.com/sns-review/tn_review01.jpg" alt="">
+      </a>
+    </div>
+    <div class="item">
+      <a href="https://x1330x.blog.me/221670651132" target="_blank">
+        <img src="https://opticlife.hgodo.com/sns-review/tn_review02.jpg" alt="">
+      </a>
+    </div>
+    <div class="item">
+      <a href="https://blog.naver.com/blueelfsky/221673511007" target="_blank">
+        <img src="https://opticlife.hgodo.com/sns-review/tn_review03.jpg" alt="">
+      </a>
+    </div>
+    <div class="item">
+      <a href="https://alsw70812.blog.me/221677280437" target="_blank">
+        <img src="https://opticlife.hgodo.com/sns-review/tn_review04.jpg" alt="">
+      </a>
+    </div>
+    <div class="item">
+      <a href="https://cloie517.blog.me/221668293114" target="_blank">
+        <img src="https://opticlife.hgodo.com/sns-review/tn_review05.jpg" alt="">
+      </a>
+    </div>
+    <div class="item">
+      <a href="https://b1758.blog.me/221684099027" target="_blank">
+        <img src="https://opticlife.hgodo.com/sns-review/tn_review06.jpg" alt="">
+      </a>
+    </div>
+    <div class="item">
+      <a href="https://blog.naver.com/from_being/221675275659" target="_blank">
+        <img src="https://opticlife.hgodo.com/sns-review/tn_review07.jpg" alt="">
+      </a>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  let session = {};
+  // image width 200px
+  // margin: 13px
+  session.visibleArea = document.querySelector('._visiblearea')
+
+  session.scrollRight = function() {
+    session.visibleArea.scrollTo(852, 0) // 4 *  (200 + 13)
+  }
+
+  session.scrollLeft = function() {
+    session.visibleArea.scrollTo(-852, 0) // 4 *  (200 + 13)
+    console.log(`offset: ${session.offset}`)
+  }
+
+</script>
